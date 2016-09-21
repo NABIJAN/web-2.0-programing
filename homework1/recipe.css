@@ -1,0 +1,71 @@
+.style_h1{
+	color: rgb(164,164,0);
+	background-color: rgb(240,240,240);
+	font-family: "Century Gothic";
+	text-align: center;
+	text-decoration: underline;
+	font-size: 22pt;
+	font-weight: bold;
+}
+.style_h2{
+	color: rgb(164,164,0);
+	background-color: rgb(240,240,240);
+	font-family: "Century Gothic";
+	text-align: left;
+	text-decoration: underline;
+	font-size: 18pt;
+	font-weight: normal;
+}
+
+.body{
+	background: url("http://courses.cs.washington.edu/courses/cse190m/09sp/homework/1/silverware.jpg");
+}
+
+.text{
+	color: rgb(64,64,64);
+	font-size: 11pt;
+	font-family: Georgia;
+}
+
+.link{
+	color: rgb(164,164,0);
+	font-size: 11pt;
+	font-family: Georgia;
+}
+
+.directions{
+	font-weight: bold;
+}
+
+.quotation {
+	font-style: italic;
+	background-color: rgb(255,255,200);
+}
+
+.ul_1{
+	list-style-type: none;
+	padding: 0;
+}
+
+.ul_2{
+	list-style-image: url("http://courses.cs.washington.edu/courses/cse190m/09sp/homework/1/pie_icon.gif")
+}
+
+.img1{
+	text-align: center;
+	margin: 0 auto;
+}
+
+.sty_h2{
+	font-style: italic;
+	font-size: 18pt;
+	font-weight: bold;
+	text-align: center;
+}
+.sty_h1{
+	text-align: center;
+	font-family: Garamond;
+	font-size: 30pt;
+	font-weight: bold;
+	color: rgb(164,164,0);;
+}
