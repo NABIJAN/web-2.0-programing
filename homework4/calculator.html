@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="calculator_sytle.css">
+	<script type="text/javascript" src="calculator.js"></script>
+	<title>Calculator</title>
+</head>
+<body>
+
+	<div id="calculator_position">
+		<h1>简单计算器</h1>
+		<div id="calculator_body">
+			<div id="monitor">
+				<input type="text" id="result" disabled="disabled" value="">
+			</div>
+			<ul>
+				<li onclick="add_to_string(7);" class="keystroke_style">7</li>
+				<li onclick="add_to_string(8);" class="keystroke_style">8</li>
+				<li onclick="add_to_string(9);" class="keystroke_style">9</li>
+				<li onclick="add_to_string('/');" class="keystroke_style">/</li>
+				<li onclick="add_to_string(4);" class="keystroke_style">4</li>
+				<li onclick="add_to_string(5);" class="keystroke_style">5</li>
+				<li onclick="add_to_string(6);" class="keystroke_style">6</li>
+				<li onclick="add_to_string('*');" class="keystroke_style">*</li>
+				<li onclick="add_to_string(1);" class="keystroke_style">1</li>
+				<li onclick="add_to_string(2);" class="keystroke_style">2</li>
+				<li onclick="add_to_string(3);" class="keystroke_style">3</li>
+				<li onclick="add_to_string('-');" class="keystroke_style">-</li>
+				<li onclick="add_to_string(0);" class="keystroke_style">0</li>
+				<li onclick="add_to_string('.');" class="keystroke_style">.</li>
+				<li onclick="delete_from_string();" class="keystroke_style">&#8592</li>
+				<li onclick="add_to_string('+');" class="keystroke_style">+</li>
+				<li onclick="add_to_string('(');" class="keystroke_style">(</li>
+				<li onclick="add_to_string(')');" class="keystroke_style">)</li>
+				<li onclick="delete_all();" class="keystroke_style">CE</li>
+				<li onclick="outcome()" class="keystroke_style">=</li>
+			</ul>
+		</div>
+
+	</div>
+</body>
+</html>
