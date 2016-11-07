@@ -1,0 +1,41 @@
+#todo{
+	border: 1px solid gray;
+	border-collapse: collapse;
+}
+#todo th{
+	padding-left: 5px;
+	padding-right: 10px;
+	text-align: left;
+	border: 1px solid gray;
+	border-collapse: collapse;
+	color: white;
+	background: #000080;
+}
+#todo td{
+	padding-left: 5px;
+	padding-right: 10px;
+	border: 1px solid gray;
+	border-collapse: collapse
+}
+.alternate{
+	background: #c1c2c3;
+}
+#staff{
+	border: 1px solid gray;
+	border-collapse: collapse;
+}
+#staff th{
+	padding-left: 5px;
+	padding-right: 30px;
+	text-align: left;
+	border: 1px solid gray;
+	border-collapse: collapse;
+	color: white;
+	background-color: #000080;
+}
+#staff td{
+	padding-left: 5px;
+	padding-right: 10px;
+	border: 1px solid gray;
+	border-collapse: collapse
+}
