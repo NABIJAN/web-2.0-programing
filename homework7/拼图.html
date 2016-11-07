@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>拼图</title>
+	<link rel="stylesheet" type="text/css" href="FP.css">
+	<script type="text/javascript" src="FP.js"></script>
+	<script language="JavaScript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.js"></script>
+</head>
+<body id="body">
+	<div id="gamebox">
+		<h1>拼图游戏</h1>
+		<div id="show">
+			<p>Time:</p>
+			<input id="showtime" type="text" value="0" disabled="disabled">
+		</div>
+		<div id="game">
+			
+		</div>
+
+		<button id="start1" onclick="startgame(30)">简单</button>
+		<button id="start2" onclick="startgame(80)">一般</button>
+		<button id="start3" onclick="startgame(150)">困难</button>
+		<button id="end" onclick="endgame()">退出</button>
+		<div id="reference">
+			<img src="img/sc1.jpg">
+			<p>reference</p>
+		</div>
+
+	</div>
+</body>
+</html>
