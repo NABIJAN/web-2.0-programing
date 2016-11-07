@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="CSS/TAMM.css">
+	<script type="text/javascript" src="JS/TAMM.js"></script>
+	<script language="JavaScript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.js"></script>
+	<title>TAMM</title>
+</head>
+<body>
+	<div id="statement">
+		<h>The Amazing Mouse Maze!</h>
+		<p>Move your mouse over the "S" to begin.</p>
+		<p>Don't cheat, you should start form the 's' and move to the 'E' inside the maze!</p>
+	</div>
+
+	<div id="game_box"">
+		<div id="result"></div>
+
+		<div id="game" onmouseleave="initialize();">
+
+			<div id="u_wall_1" class="wall_style" onmouseover="foul(1)" onmouseout="recover()"></div>
+			<div id="u_wall_2" class="wall_style" onmouseover="foul(2)" onmouseout="recover()"></div>
+			<div id="u_wall_3" class="wall_style" onmouseover="foul(3)" onmouseout="recover()"></div>
+			<div id="u_wall_4" class="wall_style" onmouseover="foul(4)" onmouseout="recover()"></div>
+			<div id="u_wall_5" class="wall_style" onmouseover="foul(5)" onmouseout="recover()"></div>
+			<div id="l_wall_1" class="wall_style" onmouseover="foul(6)" onmouseout="recover()"></div>
+			<div id="l_wall_2" class="wall_style" onmouseover="foul(7)" onmouseout="recover()"></div>
+			<div id="l_wall_3" class="wall_style" onmouseover="foul(8)" onmouseout="recover()"></div>
+			<div id="l_wall_4" class="wall_style" onmouseover="foul(9)" onmouseout="recover()"></div>
+			<div id="start" onmouseleave="gameStart()">S</div>
+			<div id="end" onmouseover="finish()">E</div>
+		</div>
+
+		<div id="tip">
+			<p>The object of this game is to guide the mouse cursor through the start area and get to end area. Be sure to avaid the walls:</p>
+			<div id="wall"></div>
+			<p>Good luck!</p>
+		</div>
+	</div>
+</body>
+</html>

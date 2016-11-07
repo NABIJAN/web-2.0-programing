@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="CSS/WAM.css">
+	<script type="text/javascript" src="JS/WAM.js"></script>
+	<title>打地鼠</title>
+</head>
+<body>
+	<div id="text">
+		<h1>WHac-a-mole</h1>
+		<p>Test your skill. How many boxes(moles) can check(hit) in 30 seconds?</p>
+	</div>
+
+	<div id="gameBox">
+		<div id="data">
+			<div id="control">
+				<button onclick="start()">Start Game | Stop Game</button>
+			</div>
+			<div id="time">
+				<p>Time:</p>
+				<input id="showtime" readonly="readonly" value="30"></input>
+			</div>
+			<input id="situation" value="Game over" readonly="readonly"></input>
+			<div id="score">
+				<p>Score:</p>
+				<input id="showscore" value="0"></input>
+			</div>
+		</div>
+		<hr>
+
+		<div id="game">
+			<button class="hole" onclick="hit(1)" disabled="disabled"></button>
+			<button class="hole" onclick="hit(2)" disabled="disabled"></button>
+			<button class="hole" onclick="hit(3)" disabled="disabled"></button>
+			<button class="hole" onclick="hit(4)" disabled="disabled"></button>
+			<button class="hole" onclick="hit(5)" disabled="disabled"></button>
+			<button class="hole" onclick="hit(6)" disabled="disabled"></button>
+			<button class="hole" onclick="hit(7)" disabled="disabled"></button>
+			<button class="hole" onclick="hit(8)" disabled="disabled"></button>
+			<button class="hole" onclick="hit(9)" disabled="disabled"></button>
+			<button class="hole" onclick="hit(10)" disabled="disabled"></button>
+			<button class="hole" onclick="hit(11)" disabled="disabled"></button>
+			<button class="hole" onclick="hit(12)" disabled="disabled"></button>
+			<button class="hole" onclick="hit(13)" disabled="disabled"></button>
+			<button class="hole" onclick="hit(14)" disabled="disabled"></button>
+			<button class="hole" onclick="hit(15)" disabled="disabled"></button>
+			<button class="hole" onclick="hit(16)" disabled="disabled"></button>
+			<button class="hole" onclick="hit(17)" disabled="disabled"></button>
+			<button class="hole" onclick="hit(18)" disabled="disabled"></button>
+			<button class="hole" onclick="hit(19)" disabled="disabled"></button>
+			<button class="hole" onclick="hit(20)" disabled="disabled"></button>
+			<button class="hole" onclick="hit(21)" disabled="disabled"></button>
+			<button class="hole" onclick="hit(22)" disabled="disabled"></button>
+			<button class="hole" onclick="hit(23)" disabled="disabled"></button>
+			<button class="hole" onclick="hit(24)" disabled="disabled"></button>
+		</div>
+		<hr>
+	</div>
+
+	<div id="instruction">
+		<p>Instruction</p>
+		<ol>
+			<li>Click on the radio button(moles) as they selected randomly by the computer.</li>
+			<li>1 point per hit, minus 1 point per miss.</li>
+		</ol>
+	</div>
+
+</body>
+</html>

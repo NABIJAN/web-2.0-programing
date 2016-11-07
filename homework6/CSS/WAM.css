@@ -1,0 +1,151 @@
+#text{                        /*最上面文本的样式*/
+	text-align: center;
+	font-family: "Century Gothic";
+	font-weight: bold;
+}
+#text p{
+	font-size: 18pt;
+}
+
+#gameBox{                   /*游戏盒子*/
+	width: 400px;
+	height: 380px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#data{                     /*有数据的部分*/
+	position: relative;
+	width: 400px;
+	height: 80px;
+}
+#control{               /*开始键*/
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 50%;
+	height: 50%;
+}
+#control button{
+	width: 90%;
+	border-radius: 10px 10px 10px 10px;
+	font-family: "Century Gothic";
+	font-weight: bold;
+	font-size: 8pt;
+
+	outline-style: none;
+}
+#time{                /*显示时间块*/
+	position: absolute;
+	left: 50%;
+	top: 0;
+	width: 48%;
+	height: 26px;
+}
+#time p{
+	width: 50px;
+	margin: 0px;
+	padding: 0px;
+	padding-left: 5px;
+	font-family: "Century Gothic";
+	font-weight: bold;
+	font-size: 12pt;
+}
+#showtime{              /*显示时间*/
+	position: absolute;
+	left: 50px;
+	top: 0px;
+	margin: 0px;
+	padding: 0px;
+	width: 50px;
+	height: 24px;
+	border: 1px solid gray;
+	border-radius: 10px 10px 10px 10px;
+
+	margin: 0px;
+	padding: 0px;
+	padding-left: 10px;
+}
+#situation{               /*显示游戏状态*/
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 40%;
+	height: 26px;
+	border: 1px solid gray;
+	border-radius: 10px 10px 10px 10px;
+	padding-left: 10px;
+	font-family: "Century Gothic";
+	font-weight: bold;
+	font-size: 12pt;
+}
+#score{                 /*显示分数的块*/
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 48%;
+	height: 26px;
+}
+#score p{
+	margin: 0px;
+	padding: 0px;
+	padding-left: 10px;
+	font-family: "Century Gothic";
+	font-weight: bold;
+	font-size: 12pt;
+}
+#showscore{              /*显示时间*/
+	position: absolute;
+	left: 65px;
+	top: 0px;
+	margin: 0px;
+	padding: 0px;
+	width: 50px;
+	height: 24px;
+	border: 1px solid gray;
+	border-radius: 10px 10px 10px 10px;
+
+	padding: 0px;
+	margin: 0px;
+	padding-left: 10px;
+}
+#game{                 /*游戏*/
+	width: 300px;
+	height: 200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#game button{        /*洞*/
+	width: 30px;
+	height: 30px;
+	margin: 10px;
+	border-radius: 50%;
+	float: left;
+	background: white;
+
+	outline-style: none;
+}
+.hole{             /*没有地鼠的洞*/
+	border: 2px solid blue;
+}
+.gopher{           /*有地鼠的洞*/
+	border: 9px solid blue;
+}
+#instruction{        /*最下面的文本*/
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#instruction p{
+	font-weight: bold;
+	font-family: "Century Gothic";
+	font-size: 16pt;
+	margin-bottom: 0px;
+}
+#instruction ol{
+	margin-top: 0px;
+}
+#instruction li{
+	font-family: "Century Gothic";
+	font-weight: bold;
+	font-size: 12pt;
+}
