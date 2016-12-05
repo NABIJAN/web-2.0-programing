@@ -1,4 +1,4 @@
-#calculator_position{
+#calculator_position{   /*计算器的位置*/
 	width: 500px;
 	margin-left: auto;
 	margin-right: auto;
@@ -9,7 +9,7 @@
 	color: green;
 	font-weight: bold;
 }
-#calculator_body{
+#calculator_body{    /*计算器的本身*/
 	width: 480px;
 	height: 440px;
 	position: relative;
@@ -22,20 +22,20 @@
 	list-style: none;
 	padding: 0px;
 }
-#monitor{
+#monitor{         /*显示结果的块*/
 	width: 435px;
 	height: 35px;
 	margin-top: 10px;
 	margin-left: auto;
 	margin-right: auto;
 }
-#result{
+#result{        /*显示结果*/
 	width: 435px;
 	height: 35px;
 	font-size: 30px;
 	font-weight: bold;
 }
-.keystroke_style{
+.keystroke_style{      /*按键的属性*/
 	margin-left: 20px;
 	border: 1px solid gray;
 	margin-top: 3px;
@@ -51,6 +51,6 @@
 	font-weight: bold;
 	text-align: center;
 }
-.keystroke_style:hover{
+.keystroke_style:hover{  /*鼠标放到按键上面时的效果*/
 	background: white;
 }
