@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign in</title>
+	<link rel="stylesheet" type="text/css" href="CSS/signup.css">
+	<script type="text/javascript" src="JS/signup.js"></script>
+	<script language="JavaScript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.js"></script>
+	<meta charset="utf-8">
+</head>
+<body id="body">
+	<div id="wrapper">
+		<h1>注册</h1>
+
+		<div id="signup">
+			<h2>用户注册</h2>
+
+			<div id="signup_box">
+				<form action="detail" method="post">
+
+					<div id="username_form_element" class="form_element">
+						<legend>用户名</legend>
+						<label id="usernamelabel">
+							<input type="text" name="username" id="username">
+						</label>
+						<span role="alert" class="erromsg" id="errormsg_username"></span>
+					</div>
+
+					<div id="studentid_form_element" class="form_element">
+					<legend>学号</legend>
+						<label id="studentidlabel">
+							<input type="text" name="studentid" id="studentid">
+						</label>
+						<span role="alert" class="erromsg" id="errormsg_studentid"></span>
+					</div>
+
+					<div id="tel_form_element" class="form_element">
+					<legend>电话</legend>
+						<label id="tellabel">
+							<input type="text" name="tel" id="tel">
+						</label>
+						<span role="alert" class="erromsg" id="errormsg_tel"></span>
+					</div>
+
+					<div id="email_form_element" class="form_element">
+					<legend>邮箱</legend>
+						<label id="emaillabel">
+							<input type="text" name="email" id="email">
+						</label>
+						<span role="alert" class="erromsg" id="errormsg_email"></span>
+					</div>
+
+					<div id="button">
+						<input id="submit_button" type="submit" name="submitbuuton" value="提交" disabled="disabled">
+						<input id="clear_button" type="button" name="clearbuuton" value="清除">
+					</div>
+
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
