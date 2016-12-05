@@ -1,0 +1,169 @@
+#statement{              /*说明文字的属性*/
+	text-align: center;
+	font-family: "Century Gothic";
+	font-weight: bold;
+}
+#statement h{
+	font-size: 24pt;
+}
+#statement p{
+	font-size: 18pt;
+}
+
+#game_box{     /*游戏所在的盒子的属性*/
+	margin-left: auto;
+	margin-right: auto;
+	width: 600px;
+}
+#result{
+	height: 80px;
+	margin-bottom: 0;
+	text-align: center;
+	font-family: "Century Gothic";
+	font-weight: bold;
+	font-size: 18pt;
+}
+#game{        /*游戏的样式*/
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 500px;
+	height: 300px;
+}
+#game:hover{
+	cursor: pointer;
+}
+.wall_style{      /*墙的属性*/
+	background: #d8dbdf;
+}
+#u_wall_1{
+	position: absolute;
+	left: 0%;
+	top: 0%;
+	width: 30%;
+	height: 16.7%;
+	border-top: 1px solid black;
+	border-left: 1px solid black;
+}
+#u_wall_2{
+	position: absolute;
+	left: 0%;
+	top: 16.9%;
+	width: 29.8%;
+	height: 49.8%;
+	border-bottom: 1px solid black;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+}
+#u_wall_3{
+	position: absolute;
+	left: 30%;
+	top: 0%;
+	width: 40%;
+	height: 16.7%;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+#u_wall_4{
+	position: absolute;
+	left: 70%;
+	top: 0%;
+	width: 30%;
+	height: 16.7%;
+	border-top: 1px solid black;
+	border-right: 1px solid black;
+}
+#u_wall_5{
+	position: absolute;
+	left: 69.8%;
+	top: 16.9%;
+	width: 30%;
+	height: 49.8%;
+	border-bottom: 1px solid black;
+	border-right: 1px solid black;
+	border-left: 1px solid black;
+}
+
+#l_wall_1{             /*下面的墙*/
+	position: absolute;
+	left: 0%;
+	bottom: 0%;
+	width: 40%;
+	height: 16.6%;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	border-left: 1px solid black;
+}
+#l_wall_2{
+	position: absolute;
+	left: 40%;
+	bottom: 0%;
+	width: 20.2%;
+	height: 16.6%;
+	border-bottom: 1px solid black;
+}
+#l_wall_3{
+	position: absolute;
+	left: 40%;
+	bottom: 17%;
+	width: 20%;
+	height: 49.8%;
+	border-right: 1px solid black;
+	border-top: 1px solid black;
+	border-left: 1px solid black;
+}
+#l_wall_4{
+	position: absolute;
+	left: 60.2%;
+	bottom: 0%;
+	width: 39.8%;
+	height: 16.6%;
+	border-bottom: 1px solid black;
+	border-right: 1px solid black;
+	border-top: 1px solid black;
+}
+#start{         /*开始*/
+	position: absolute;
+	left: 0%;
+	bottom: 18.9%;
+	width: 8%;
+	height: 12%;
+	border: 1px solid black;
+	background: #4ff03d;
+
+	text-align: center;
+	font-family: "Century Gothic";
+	font-size: 26pt;
+}
+#end{          /*结束*/
+	position: absolute;
+	right: 0%;
+	bottom: 18.9%;
+	width: 8%;
+	height: 12%;
+	border: 1px solid black;
+	background: #46457d;
+
+	margin:0px;
+	padding: 0px;
+	text-align: center;
+	font-family: "Century Gothic";
+	font-size: 26pt;
+}
+
+#tip p{
+	font-family: "Century Gothic";
+	font-size: 12pt;
+}
+#wall{        /*墙的样品*/
+	width: 120px;
+	height: 30px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	background: #d8dbdf;
+	border: 1px solid black;
+}
+.whenLose{
+	background: red;
+}

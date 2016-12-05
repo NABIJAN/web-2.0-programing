@@ -16,25 +16,30 @@ function addOnclickEvent() {
 			"background-repeat":"no-repeat",
 			"background-position":"right"
 		});
-		if(isAscendingOrderSort){
-			$(this).css("background-image","url(ascend.png)");
-			if(this.innerText == "What?") todoAscendingOrderSort(0);
-			if(this.innerText == "When?") todoAscendingOrderSort(1);
-			if(this.innerText == "Location") todoAscendingOrderSort(2);
-			if(this.innerText == "First name") staffAscendingOrderSort(0);
-			if(this.innerText == "Last name") staffAscendingOrderSort(1);
-			if(this.innerText == "Latest checkin") staffAscendingOrderSort(2);
-		} else {
-			$(this).css("background-image","url(descend.png)");
-			if(this.innerText == "What?") todoDescendingOrderSort(0);
-			if(this.innerText == "When?") todoDescendingOrderSort(1);
-			if(this.innerText == "Location") todoDescendingOrderSort(2);
-			if(this.innerText == "First name") staffDescendingOrderSort(0);
-			if(this.innerText == "Last name") staffDescendingOrderSort(1);
-			if(this.innerText == "Latest checkin") staffDescendingOrderSort(2);
-		}
+		if(isAscendingOrderSort) changetodo(this);
+		else changestaff(this);
 		isAscendingOrderSort = !isAscendingOrderSort;
 	});
+}
+
+function changetodo(value){
+	$(value).css("background-image","url(ascend.png)");
+	if(value.innerText == "What?") todoAscendingOrderSort(0);
+	if(value.innerText == "When?") todoAscendingOrderSort(1);
+	if(value.innerText == "Location") todoAscendingOrderSort(2);
+	if(value.innerText == "First name") staffAscendingOrderSort(0);
+	if(value.innerText == "Last name") staffAscendingOrderSort(1);
+	if(value.innerText == "Latest checkin") staffAscendingOrderSort(2);
+}
+
+function changestaff(value){
+	$(value).css("background-image","url(descend.png)");
+	if(value.innerText == "What?") todoDescendingOrderSort(0);
+	if(value.innerText == "When?") todoDescendingOrderSort(1);
+	if(value.innerText == "Location") todoDescendingOrderSort(2);
+	if(value.innerText == "First name") staffDescendingOrderSort(0);
+	if(value.innerText == "Last name") staffDescendingOrderSort(1);
+	if(value.innerText == "Latest checkin") staffDescendingOrderSort(2);
 }
 
 function getData() {
@@ -45,7 +50,6 @@ function getData() {
 		});
 		todoData.push(temp);
 	});
-
 	$("#staff").find("tbody tr").each(function(){
 		var temp = [];
 		$(this).find("td").each(function(){
@@ -60,7 +64,7 @@ function intializestyle() {
 	a.each(function(){
 		$(this).css({
 			"background-image":"none",
-			"background-color":"#141bc8"
+			"background-color":"#000080"
 		});
 	});
 }
@@ -99,7 +103,6 @@ function staffDescendingOrderSort(col) {
 	sortReference.sort(function(a,b){return a < b;});
 	sortStaffData(sortReference, col);
 }
-
 
 function sortTodoData(sortReference, col) {
 	var i1 = 0;
